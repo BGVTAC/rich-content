@@ -1,0 +1,703 @@
+<style>
+
+    #vtac-rich-content-final {
+        font-family: Calibri, 'Trebuchet MS', Arial, sans-serif !important;
+        color: #090e18 !important;
+    }
+    
+    #vtac-rich-content-final * {
+      box-sizing: border-box;
+    }
+
+    #vtac-rich-content-final img {
+      max-width: 100%;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    #vtac-rich-content-final a {
+      text-decoration: none;
+    }
+    
+    #vtac-rich-content-final h1,
+    #vtac-rich-content-final h2,
+    #vtac-rich-content-final h3,
+    #vtac-rich-content-final p {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    #vtac-rich-content-final .section {
+      padding: 64px;
+    }
+
+    #vtac-rich-content-final .grey-section {
+      background-color: #f1f2f2 !important;
+    }
+
+    #vtac-rich-content-final .top-section {
+      margin-top: 32px;
+    }
+
+    #vtac-rich-content-final .belka-section {
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
+    
+    #vtac-rich-content-final .blue-section {
+      background-image: linear-gradient(180deg, #002a3a, #001b25) !important;
+      margin-top: 64px;
+      margin-bottom: 64px;
+      padding-top: 64px;
+      padding-bottom: 0;
+    }
+
+    #vtac-rich-content-final .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #vtac-rich-content-final .div-block {
+      gap: 64px;
+      display: flex !important;
+      align-items: center;
+    }
+
+    #vtac-rich-content-final .h1-gwr-heading {
+      color: #002a3a;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 110%;
+    }
+    
+    #vtac-rich-content-final .body-text {
+      color: #58595b;
+      text-align: left;
+      font-size: 24px;
+      line-height: 150%;
+    }
+    
+    #vtac-rich-content-final .div-block-2 {
+      gap: 10px;
+      flex-flow: column;
+      display: flex !important;
+    }
+
+    #vtac-rich-content-final .text-block {
+      color: #939598;
+      font-size: 16px;
+    }
+    
+    #vtac-rich-content-final .image-3 {
+      border-radius: 32px;
+      width: 100%;
+      display: block;
+    }
+
+    #vtac-rich-content-final .head-cont {
+      align-items: center;
+      display: flex !important;
+      gap: 16px;
+    }
+
+    #vtac-rich-content-final .head-item-box {
+      width: 60%;
+    }
+
+    #vtac-rich-content-final .div-block-4 {
+      width: 40%;
+    }
+
+    #vtac-rich-content-final .h2-heading {
+      color: #00ce7c !important;
+      margin-top: 10px;
+      margin-bottom: 50px;
+      font-size: 42px;
+      line-height: 100%;
+      font-weight: bold;
+    }
+    
+    #vtac-rich-content-final .medium-txt {
+      color: #939598;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 150%;
+    }
+
+    #vtac-rich-content-final .h1-heading {
+      color: #002a3a;
+      font-size: 76px;
+      font-weight: 800;
+      line-height: 110%;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    
+    #vtac-rich-content-final .h1-heading.blue-s {
+      color: #fff;
+    }
+    
+    #vtac-rich-content-final .grid {
+      display: grid !important;
+      gap: 10%;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #vtac-rich-content-final .image-4 {
+      border: 3px solid #fff;
+      border-radius: 32px;
+      box-shadow: 0 0 50px #0000001a;
+    }
+
+    #vtac-rich-content-final .grid-2 {
+      display: grid !important;
+      gap: 64px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #vtac-rich-content-final .div-block-5 {
+      gap: 40px;
+      display: flex !important;
+      align-items: flex-start;
+    }
+
+    #vtac-rich-content-final .icon-heading {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+
+    #vtac-rich-content-final .icon-text.body-text {
+      font-size: 20px;
+      color: #58595b;
+    }
+
+    #vtac-rich-content-final .div-block-6 {
+      gap: 26px;
+      flex-flow: column;
+      display: flex !important;
+    }
+
+    #vtac-rich-content-final .divider {
+      background-color: #939598;
+      height: 1px;
+    }
+    
+    #vtac-rich-content-final .divider.spec-divider {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+
+    #vtac-rich-content-final .div-block-8 {
+      justify-content: space-between;
+      align-items: stretch;
+      display: flex !important;
+    }
+    
+    #vtac-rich-content-final .pwr-txt {
+      color: #00ce7c !important;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 150%;
+    }
+
+    #vtac-rich-content-final .pwr-block {
+      border-radius: 20px;
+      padding: 12px;
+      box-shadow: 0 0 30px #0000001a;
+      flex-grow: 1;
+    }
+    
+    #vtac-rich-content-final .item-container-pwr,
+    #vtac-rich-content-final .right-side-container {
+      width: 50% !important;
+    }
+
+    #vtac-rich-content-final .div-block-10 {
+      gap: 32px;
+      margin-top: 32px;
+      display: flex !important;
+    }
+
+    #vtac-rich-content-final .img-block {
+      justify-content: flex-end;
+      align-items: center;
+      width: 50% !important;
+      display: flex !important;
+    }
+    
+    #vtac-rich-content-final .img-block.left-side-div {
+        justify-content: flex-start;
+    }
+    
+    #vtac-rich-content-final .h1-heading.right-side-heading,
+    #vtac-rich-content-final .h2-heading.right-side-heading,
+    #vtac-rich-content-final .body-text.right-side-txt {
+        text-align: right;
+    }
+
+    #vtac-rich-content-final .temp-block {
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: -60px;
+      display: flex !important;
+    }
+
+    #vtac-rich-content-final .temp-text {
+      color: #fff;
+      font-size: 100px;
+      font-weight: 500;
+      line-height: 150%;
+    }
+    
+    #vtac-rich-content-final .video-div {
+      border-radius: 32px;
+      overflow: hidden;
+      position: relative;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+
+    #vtac-rich-content-final .video-div iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    #vtac-rich-content-final .div-block-13 {
+      width: 100%;
+      margin-top: 64px;
+    }
+	
+	#vtac-rich-content-final .image-6 {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 32px;
+	}
+
+    #vtac-rich-content-final .spec-container {
+      background-color: #f1f2f2 !important;
+      border-radius: 32px;
+      padding: 64px;
+    }
+
+    #vtac-rich-content-final .spec-main-txt {
+      color: #002a3a;
+      font-size: 64px;
+      font-weight: 500;
+      line-height: 110%;
+    }
+    
+    #vtac-rich-content-final .spec-block {
+      display: flex !important;
+    }
+
+    #vtac-rich-content-final .spec-halfblock {
+      width: 50% !important;
+    }
+
+    #vtac-rich-content-final .spec-halfblock.left-halfblock {
+      padding-right: 32px;
+    }
+
+    #vtac-rich-content-final .spec-cat,
+    #vtac-rich-content-final .spec-cat-txt {
+      color: #00bc70 !important;
+    }
+
+    #vtac-rich-content-final .spec-cat {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    #vtac-rich-content-final .spec-cat-txt {
+      font-size: 40px;
+      line-height: 150%;
+    }
+
+    #vtac-rich-content-final .bottom-box {
+      background-image: url("https://raw.githubusercontent.com/BGVTAC/rich-content/main/images-23826/background-01.webp") !important;
+      background-position: 50% 100%;
+      background-size: cover;
+      border-radius: 32px;
+      padding: 64px 128px;
+    }
+
+    #vtac-rich-content-final .bottom-box-txt {
+      color: #fff;
+      font-size: 64px;
+      font-weight: 500;
+      line-height: 110%;
+    }
+
+    #vtac-rich-content-final .div-block-14 {
+      justify-content: space-between;
+      align-items: center;
+      display: flex !important;
+    }
+
+    #vtac-rich-content-final .bottom-button {
+      background-image: linear-gradient(210deg, #00ce7c, #0f9 100%, #00ce7c00) !important;
+      border-radius: 16px;
+      padding: 16px 64px;
+      box-shadow: 0 0 20px 10px #0000001a;
+      flex-shrink: 0;
+    }
+
+    #vtac-rich-content-final .button-txt {
+      color: #fff;
+      text-align: center;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 100%;
+    }
+	
+	/* --- Poprawka dla siatki z ikonami --- */
+	#vtac-rich-content-final .icon-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important; /* 4 ikony w rzędzie na komputerze */
+    gap: 5vw !important; /* Odstęp między ikonami */
+    max-width: 1400px !important; /* Ograniczenie szerokości siatki */
+    margin: 0 auto !important; /* Wyśrodkowanie siatki */
+	}
+
+	/* Reguła dla smartfonów */
+	@media screen and (max-width: 767px) {
+	
+    #vtac-rich-content-final .icon-grid {
+        grid-template-columns: repeat(2, 1fr) !important; /* 2 ikony w rzędzie na smartfonie */
+        gap: 24px !important;
+		margin: 24px !important;
+        max-width: 500px !important; /* Lepsze dopasowanie na wąskich ekranach */
+    }
+	}
+    
+    /* ----- MEDIA QUERIES ----- */
+
+    @media screen and (max-width: 991px) {
+      #vtac-rich-content-final .section { padding: 32px; }
+      #vtac-rich-content-final .belka-section { margin-top: 32px; }
+      #vtac-rich-content-final .blue-section { padding-top: 32px; }
+      #vtac-rich-content-final .h1-gwr-heading { font-size: 40px; }
+      #vtac-rich-content-final .body-text { font-size: 18px; }
+      #vtac-rich-content-final .h2-heading { margin-bottom: 40px; font-size: 30px; }
+      #vtac-rich-content-final .medium-txt { font-size: 20px; }
+      #vtac-rich-content-final .h1-heading { font-size: 50px; }
+      #vtac-rich-content-final .image-4 { border-radius: 16px; }
+      #vtac-rich-content-final .grid-2 { grid-template-columns: 1fr 1fr !important; gap: 64px; }
+      #vtac-rich-content-final .div-block-5 { gap: 20px; }
+      #vtac-rich-content-final .icon-heading { font-size: 24px; }
+      #vtac-rich-content-final .icon-text.body-text { font-size: 16px; }
+      #vtac-rich-content-final .pwr-txt { font-size: 30px; }
+      #vtac-rich-content-final .div-block-10 { gap: 16px; flex-flow: column !important; }
+      #vtac-rich-content-final .temp-text { font-size: 60px; }
+      #vtac-rich-content-final .div-block-13 { margin-top: 32px; }
+      #vtac-rich-content-final .spec-cat { font-size: 20px; }
+      #vtac-rich-content-final .spec-cat-txt { font-size: 30px; }
+      #vtac-rich-content-final .bottom-box { padding: 50px; }
+      #vtac-rich-content-final .bottom-box-txt { font-size: 32px; }
+      #vtac-rich-content-final .button-txt { font-size: 26px; }
+    }
+	
+    @media screen and (max-width: 767px) {
+      #vtac-rich-content-final .div-block, 
+      #vtac-rich-content-final .head-cont, 
+      #vtac-rich-content-final .div-block-8,
+      #vtac-rich-content-final .div-block-14,
+      #vtac-rich-content-final .spec-block {
+          flex-direction: column !important;
+          text-align: center;
+      }
+      #vtac-rich-content-final .head-item-box,
+      #vtac-rich-content-final .div-block-4,
+      #vtac-rich-content-final .item-container-pwr,
+      #vtac-rich-content-final .right-side-container,
+      #vtac-rich-content-final .img-block,
+      #vtac-rich-content-final .spec-halfblock {
+          width: 100% !important;
+      }
+      #vtac-rich-content-final .spec-halfblock.left-halfblock { padding-right: 0; }
+      #vtac-rich-content-final .div-block-4 { order: -1; }
+      #vtac-rich-content-final .img-block { justify-content: center !important; }
+      #vtac-rich-content-final .div-block-14 { gap: 32px; }
+      #vtac-rich-content-final .body-text, 
+      #vtac-rich-content-final .h1-heading, 
+      #vtac-rich-content-final .h2-heading,
+      #vtac-rich-content-final .medium-txt { text-align: center; }
+      #vtac-rich-content-final .h1-gwr-heading { font-size: 30px; }
+      #vtac-rich-content-final .body-text { font-size: 16px; }
+      #vtac-rich-content-final .text-block { font-size: 12px; }
+      #vtac-rich-content-final .h2-heading { margin-top: 0; font-size: 24px; }
+      #vtac-rich-content-final .medium-txt { font-size: 16px; }
+      #vtac-rich-content-final .h1-heading { font-size: 36px; }
+      #vtac-rich-content-final .grid-2 { grid-template-columns: 1fr !important; }
+      #vtac-rich-content-final .pwr-txt { font-size: 22px; }
+      #vtac-rich-content-final .div-block-10 { flex-direction: row !important; }
+      #vtac-rich-content-final .img-block.left-side-div { order: 1; margin-top: 32px; }
+      #vtac-rich-content-final .temp-text { font-size: 40px; }
+      #vtac-rich-content-final .spec-main-txt { font-size: 32px; }
+      #vtac-rich-content-final .spec-cat { font-size: 16px; }
+      #vtac-rich-content-final .spec-cat-txt { font-size: 20px; }
+      #vtac-rich-content-final .bottom-box { padding: 32px; }
+      #vtac-rich-content-final .bottom-box-txt { font-size: 22px; }
+      #vtac-rich-content-final .bottom-button { padding-left: 32px; padding-right: 32px; }
+      #vtac-rich-content-final .button-txt { font-size: 20px; }
+    }
+    
+    @media screen and (max-width: 479px) {
+      #vtac-rich-content-final .section { padding: 16px 12px; }
+      #vtac-rich-content-final .belka-section { margin: 32px 0; padding: 16px 0; }
+      #vtac-rich-content-final .blue-section { margin: 32px 0; }
+      #vtac-rich-content-final .image-3 { border-radius: 0; }
+      #vtac-rich-content-final .div-block-4 { width: 80%; }
+      #vtac-rich-content-final .grid { grid-template-columns: 1fr 1fr !important; gap: 8%; }
+      #vtac-rich-content-final .grid-2 { gap: 48px; }
+      #vtac-rich-content-final .icon-heading { font-size: 20px; }
+      #vtac-rich-content-final .div-block-10 { flex-direction: column !important; }
+      #vtac-rich-content-final .img-block { margin-top: 32px; }
+      #vtac-rich-content-final .temp-block { margin-bottom: -30px; }
+      #vtac-rich-content-final .temp-text { font-size: 30px; }
+      #vtac-rich-content-final .spec-container { padding: 24px; }
+      #vtac-rich-content-final .spec-main-txt { font-size: 32px; }
+      #vtac-rich-content-final .bottom-box-txt { font-size: 24px; }
+      #vtac-rich-content-final .bottom-button { padding-left: 64px; padding-right: 64px; }
+    }
+</style>
+
+<div id="vtac-rich-content-final">
+
+    <section class="section grey-section top-section">
+        <div class="container">
+            <div class="div-block">
+                <img alt="Gwarancja 5 lat" src="https://imgur.com/scH4EAe.png"/>
+                <div class="div-block-2">
+                    <h1 class="h1-gwr-heading">5-letnia gwarancja</h1>
+                    <p class="body-text">Zaufaj jakości, która trwa. Wszystkie produkty z tej serii objęte są pełną, 5-letnią gwarancją producenta – bez kompromisów.</p>
+                    <p class="text-block">*Dotyczy całej rodziny produktów z tej linii produktowej.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <img alt="Oprawa Highbay w użyciu w magazynie" class="image-3" src="https://bgvtac.github.io/rich-content/images-23826/product-in-use.webp"/>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container head-cont">
+            <div class="head-item-box">
+                <h1 class="h1-heading">Nowa Generacja</h1>
+                <h2 class="h2-heading">Naświetlacz LED</h2>
+                <div class="medium-txt">Naświetlacz LED SMD / Barwa:4000K/6500K<br/>Obudowa: Czarna / Efektywność świetlna 160lm/W<br/>5 Lat gwarancji</div>
+            </div>
+            <div class="div-block-4">
+                <img alt="Zdjęcie produktu Highbay LED" src="https://bgvtac.github.io/rich-content/images-23826/main-prod.webp"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <img alt="Banner z cechami produktu" src="https://bgvtac.github.io/rich-content/images-23826/Asset-1.svg"/>
+        </div>
+    </section>
+
+	<section class="section grey-section belka-section">
+    <div class="container">
+        <div class="icon-grid">
+            <img alt="Ikona 5 lat gwarancji" class="image-4" src="https://bgvtac.github.io/rich-content/images-23826/5-lat.svg"/>
+            <img alt="Ikona wodoszczelności IP65" class="image-4" src="https://bgvtac.github.io/rich-content/images-23826/ip65.svg"/>
+            <img alt="Ikona skuteczności 160 lm/W" class="image-4" src="https://bgvtac.github.io/rich-content/images-23826/lm-w.svg"/>
+            <img alt="Ikona kąta świecenia" class="image-4" src="https://bgvtac.github.io/rich-content/images-23826/kat-swiecenia.svg"/>
+        </div>
+    </div>
+	</section>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="h1-heading">Cechy które cię przekonają</h1>
+            <h2 class="h2-heading">Naświetlacz LED</h2>
+            <div class="grid-2">
+                <div class="div-block-5">
+                    <img alt="" src="https://bgvtac.github.io/rich-content/images-23826/icon6.svg" width="54.5"/>
+                    <div class="div-block-6">
+                        <h3 class="icon-heading">Wysoka efektywność świetlna – 160 lm/W</h3>
+                        <p class="icon-text body-text">Maksymalna jasność przy minimalnym zużyciu energii. Oparta na diodach LED SMD.</p>
+                    </div>
+                </div>
+                <div class="div-block-5">
+                    <img alt="" src="https://bgvtac.github.io/rich-content/images-23826/icon5.svg" width="75"/>
+                    <div class="div-block-6">
+                        <h3 class="icon-heading">Szeroki kąt świecenia – 115°</h3>
+                        <p class="icon-text body-text">Skutecznie oświetla duże powierzchnie robocze, zapewniając równomierne rozproszenie światła.</p>
+                    </div>
+                </div>
+                <div class="div-block-5">
+                    <img alt="" src="https://bgvtac.github.io/rich-content/images-23826/icon4.svg" width="58.5"/>
+                    <div class="div-block-6">
+                        <h3 class="icon-heading">Zaawansowany system odprowadzania ciepła</h3>
+                        <p class="icon-text body-text">Radiator i aluminiowa obudowa skutecznie chronią elektronikę przed przegrzaniem, wydłużając żywotność.</p>
+                    </div>
+                </div>
+                <div class="div-block-5">
+                    <img alt="" src="https://bgvtac.github.io/rich-content/images-23826/icon3.svg" width="84.5"/>
+                    <div class="div-block-6">
+                        <h3 class="icon-heading">Stopień ochrony IP65</h3>
+                        <p class="icon-text body-text">Pełna pyło- i wodoszczelność – idealna do pracy w warunkach przemysłowych i na zewnątrz.</p>
+                    </div>
+                </div>
+                <div class="div-block-5">
+                    <img alt="" src="https://bgvtac.github.io/rich-content/images-23826/icon2.svg" width="60"/>
+                    <div class="div-block-6">
+                        <h3 class="icon-heading">Odporność mechaniczna IK08</h3>
+                        <p class="icon-text body-text">Zabezpieczenie przed uderzeniami i uszkodzeniami – gotowa na trudne środowiska.</p>
+                    </div>
+                </div>
+                <div class="div-block-5">
+                    <img alt="" src="https://bgvtac.github.io/rich-content/images-23826/icon1.svg" width="61.5"/>
+                    <div class="div-block-6">
+                        <h3 class="icon-heading">Natychmiastowy start <br/>0–100%</h3>
+                        <p class="icon-text body-text">Pełna moc światła w mniej niż 1 sekundę – bez rozgrzewania, migania czy opóźnień.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="div-block-8">
+                <div class="item-container-pwr">
+                    <h1 class="h1-heading">Dostępne moce</h1>
+                    <h2 class="h2-heading">Naświetlacz LED</h2>
+                    <div class="div-block-10">
+                        <div class="pwr-block"><h3 class="pwr-txt">30W</h3></div>
+                        <div class="pwr-block"><h3 class="pwr-txt">50W</h3></div>
+                        <div class="pwr-block"><h3 class="pwr-txt">100W</h3></div>
+                    </div>
+					<div class="div-block-10">
+                        <div class="pwr-block"><h3 class="pwr-txt">150W</h3></div>
+                        <div class="pwr-block"><h3 class="pwr-txt">200W</h3></div>
+                        <div class="pwr-block"><h3 class="pwr-txt">300W</h3></div>
+                    </div>
+                </div>
+                <div class="img-block">
+                    <img alt="Trzy wersje mocy oprawy Highbay" src="https://bgvtac.github.io/rich-content/images-23826/baner-moc.webp"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section blue-section">
+        <div class="container">
+            <div>
+                <h1 class="h1-heading blue-s">Barwa światła</h1>
+                <h2 class="h2-heading">Naświetlacz LED</h2>
+                <div class="temp-block">
+                    <div class="temp-text">6500K</div>
+                    <div class="temp-text">4000K</div>
+                </div>
+                <img alt="Banner pokazujący różne barwy światła" src="https://bgvtac.github.io/rich-content/images-23826/baner-barwa.webp"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="div-block-8">
+                <div class="img-block left-side-div">
+                    <img alt="Zbliżenie na obudowę lampy" src="https://bgvtac.github.io/rich-content/images-23826/baner-obudowa.webp"/>
+                </div>
+                <div class="right-side-container">
+                    <h1 class="h1-heading right-side-heading">Obudowa</h1>
+                    <h2 class="h2-heading right-side-heading">Naświetlacz LED</h2>
+                    <p class="body-text right-side-txt">Solidna konstrukcja z odlewanego ciśnieniowo aluminium zapewnia nie tylko wysoką odporność na uszkodzenia mechaniczne, ale także doskonałe odprowadzanie ciepła. Dzięki zastosowaniu specjalnie zaprojektowanego radiatora, naświetlacz utrzymuje stabilną temperaturę pracy nawet przy długotrwałym użytkowaniu w wymagającym środowisku.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div>
+                <h1 class="h1-heading">Zastosowanie produktu</h1>
+                <h2 class="h2-heading">Naświetlacz LED</h2>
+                <div class="medium-txt">Iluminacji fasad budynków i elewacji   |   Oświetleniu obiektów sportowych   |   Oświetleniu billboardów reklamowych i tablic informacyjnych   |   Zabezpieczeniu garaży i parkingów   |   Doświetleniu przejść i pasaży   |   Oświetleniu terenów przemysłowych i komercyjnych</div>
+                <div class="div-block-13">
+                    <img alt="Grafika z zastosowaniami produktu" class="image-6" src="https://bgvtac.github.io/rich-content/images-23826/Asset-3.webp"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="spec-container">
+                <h3 class="spec-main-txt">Specyfikacja uproszczona</h3>
+                <div class="divider spec-divider"></div>
+                <div class="spec-block">
+                    <div class="spec-halfblock left-halfblock">
+                        <div class="spec-cat">Moc</div>
+                        <div class="spec-cat-txt">30 / 50 / 100 /</br>150 / 200 / 300W</div>
+                        <div class="divider spec-divider"></div>
+                        <div class="spec-cat">Kolor obudowy</div>
+                        <div class="spec-cat-txt">Czarny</div>
+                        <div class="divider spec-divider"></div>
+                        <div class="spec-cat">Kąt świecenia</div>
+                        <div class="spec-cat-txt">90°</div>
+                        <div class="divider spec-divider"></div>
+                        <div class="spec-cat">Barwa światła</div>
+                        <div class="spec-cat-txt">4000K / 6500K</div>
+                        <div class="divider spec-divider"></div>
+                        <div class="spec-cat">Efektywność świetlna</div>
+                        <div class="spec-cat-txt">160lm/W</div>
+                    </div>
+                    <div class="spec-halfblock">
+                        <div class="spec-cat">Lumeny</div>
+                        <div class="spec-cat-txt">4800 / 8000 / 16 000 /</br>24 000 / 32 000 / 48 000</div>
+                        <div class="divider spec-divider"></div>
+                        <div class="spec-cat">Standard IP</div>
+                        <div class="spec-cat-txt">IP65</div>
+                        <div class="divider spec-divider"></div>
+                        <div class="spec-cat">Diody</div>
+                        <div class="spec-cat-txt">SMD-Samsung Chip</div>
+                        <div class="divider spec-divider"></div>
+                        <div class="spec-cat">Materiał</div>
+                        <div class="spec-cat-txt">Aluminium</div>
+                        <div class="divider spec-divider"></div>
+                        <div class="spec-cat">IK Rating</div>
+                        <div class="spec-cat-txt">IK08</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="bottom-box">
+                <div class="div-block-14">
+                    <h3 class="bottom-box-txt">Sprawdź inne rodziny<br/>produktów V-TAC</h3>
+                    <a href="#" class="bottom-button">
+                        <span class="button-txt">SPRAWDŹ</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
