@@ -1,11 +1,8 @@
 <style>
-    /* ----- POCZĄTEK BEZPIECZNEJ KAPSUŁY CSS ----- */
 
     #vtac-rich-content-final {
         font-family: Calibri, 'Trebuchet MS', Arial, sans-serif !important;
         color: #090e18 !important;
-        max-width: 1200px !important; 
-        margin: 0 auto !important;     
     }
     
     #vtac-rich-content-final * {
@@ -53,11 +50,11 @@
       margin-top: 64px;
       margin-bottom: 64px;
       padding-top: 64px;
-      padding-bottom: 0; /* Zostawiamy 0, bo grafika jest na dole */
+      padding-bottom: 0;
     }
 
     #vtac-rich-content-final .container {
-      max-width: 1200px !important; 
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -118,8 +115,8 @@
       margin-top: 10px;
       margin-bottom: 50px;
       font-size: 42px;
-      font-weight: bold;
       line-height: 100%;
+      font-weight: bold;
     }
     
     #vtac-rich-content-final .medium-txt {
@@ -173,8 +170,8 @@
     }
 
     #vtac-rich-content-final .icon-text.body-text {
-      color: #58595b;
       font-size: 20px;
+      color: #58595b;
     }
 
     #vtac-rich-content-final .div-block-6 {
@@ -387,7 +384,7 @@
     @media screen and (max-width: 991px) {
       #vtac-rich-content-final .section { padding: 32px; }
       #vtac-rich-content-final .belka-section { margin-top: 32px; }
-      #vtac-rich-content-final .blue-section { padding-top: 32px; }
+      #vtac-rich-content-final .blue-section { padding-top: 32px; padding-bottom: 0px; }
       #vtac-rich-content-final .h1-gwr-heading { font-size: 40px; }
       #vtac-rich-content-final .body-text { font-size: 18px; }
       #vtac-rich-content-final .h2-heading { margin-bottom: 40px; font-size: 30px; }
@@ -418,6 +415,7 @@
           flex-direction: column !important;
           text-align: center;
       }
+		#vtac-rich-content-final .blue-section { padding-top: 32px; padding-bottom: 0px; }
       #vtac-rich-content-final .head-item-box,
       #vtac-rich-content-final .div-block-4,
       #vtac-rich-content-final .item-container-pwr,
@@ -452,24 +450,12 @@
       #vtac-rich-content-final .bottom-box-txt { font-size: 22px; }
       #vtac-rich-content-final .bottom-button { padding-left: 32px; padding-right: 32px; }
       #vtac-rich-content-final .button-txt { font-size: 20px; }
-      
-      /* POPRAWKA NA TELEFONY: Usuwa dolny odstęp wewnętrzny w bloku niebieskim */
-      #vtac-rich-content-final .blue-section .container {
-          padding-bottom: 0 !important; 
-      }
     }
     
     @media screen and (max-width: 479px) {
       #vtac-rich-content-final .section { padding: 16px 12px; }
       #vtac-rich-content-final .belka-section { margin: 32px 0; padding: 16px 0; }
-      
-      /* POPRAWKA NA WĄSKIE TELEFONY: Usuwa margines na dole i wewnętrzny odstęp, by obraz przylegał */
-      #vtac-rich-content-final .blue-section { 
-          margin-top: 32px;
-          margin-bottom: 0 !important; 
-          padding-bottom: 0 !important;
-      }
-      
+      #vtac-rich-content-final .blue-section { margin: 32px 0; padding-top: 32px; padding-bottom: 0px; }
       #vtac-rich-content-final .image-3 { border-radius: 0; }
       #vtac-rich-content-final .div-block-4 { width: 80%; }
       #vtac-rich-content-final .grid { grid-template-columns: 1fr 1fr !important; gap: 8%; }
@@ -512,7 +498,7 @@
             <div class="head-item-box">
                 <h1 class="h1-heading">Nowa Generacja</h1>
                 <h2 class="h2-heading">Naświetlacz LED</h2>
-                <div class="medium-txt">Naświetlacz LED SMD / Barwa:4000k/6500k<br/>Obudowa: Czarna / Efektywność świetlna 160lm/W<br/>5 Lat gwarancji</div>
+                <div class="medium-txt">Naświetlacz LED SMD / Barwa:4000K/6500K<br/>Obudowa: Czarna / Efektywność świetlna 160lm/W<br/>5 Lat gwarancji</div>
             </div>
             <div class="div-block-4">
                 <img alt="Zdjęcie produktu Highbay LED" src="https://bgvtac.github.io/rich-content/images-23826/main-prod.webp"/>
@@ -646,18 +632,6 @@
             </div>
         </div>
     </section>
-    
-    <section class="section grey-section">
-        <div class="container">
-            <div>
-                <h1 class="h1-heading">Prezentacja produktu</h1>
-                <h2 class="h2-heading">Naświetlacz LED</h2>
-                <div class="video-div">
-                    <iframe src="https://www.youtube.com/embed/VsmwZuzC_OA?si=aRS-nhMuPv3Ms7MZ" title="Prezentacja produktu Naświetlacz LED"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="section">
         <div class="container">
@@ -680,7 +654,7 @@
                 <div class="spec-block">
                     <div class="spec-halfblock left-halfblock">
                         <div class="spec-cat">Moc</div>
-                        <div class="spec-cat-txt">100 / 150 / 200 W</div>
+                        <div class="spec-cat-txt">30 / 50 / 100 /</br>150 / 200 / 300W</div>
                         <div class="divider spec-divider"></div>
                         <div class="spec-cat">Kolor obudowy</div>
                         <div class="spec-cat-txt">Czarny</div>
@@ -689,14 +663,14 @@
                         <div class="spec-cat-txt">90°</div>
                         <div class="divider spec-divider"></div>
                         <div class="spec-cat">Barwa światła</div>
-                        <div class="spec-cat-txt">4000K (Day white)</div>
+                        <div class="spec-cat-txt">4000K / 6500K</div>
                         <div class="divider spec-divider"></div>
                         <div class="spec-cat">Efektywność świetlna</div>
                         <div class="spec-cat-txt">160lm/W</div>
                     </div>
                     <div class="spec-halfblock">
                         <div class="spec-cat">Lumeny</div>
-                        <div class="spec-cat-txt">16 000 / 24 000 / 32 000</div>
+                        <div class="spec-cat-txt">4800 / 8000 / 16 000 /</br>24 000 / 32 000 / 48 000</div>
                         <div class="divider spec-divider"></div>
                         <div class="spec-cat">Standard IP</div>
                         <div class="spec-cat-txt">IP65</div>
